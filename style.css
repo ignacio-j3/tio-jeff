@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* MENU */
+.contenedor-header{
+    background-color: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #00ff11;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #00ff11;
+}
+.nav-responsive{
+    
+    background-color: #0a9713;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* SECCION I N I C I O */
+.inicio{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.555)),
+    url(img/fondo.png) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid #f80808;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: #00ff11;
+}
+
+.logo {
+    margin-left: 0px;
+}
+
+.logo img {
+    width: 40%;
+}
+/**/
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 20%;
+}
+
+.header {
+    height: 100vh !important;
+    background: linear-gradient(to top, rgba(1, 158, 248, 0.105), rgb(4, 4, 5)),url(img/fondo.png) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border-radius: 35px;
+    border: 2px solid #0e01f7;
+    color: #fff;
+    text-decoration: none;
+    background: #0261ae;
+}
+
+.btn:hover {
+    background: none;
+    
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    background: #1e2326;
+}
+
+.price {
+    background: url(img/fondo2.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+
+.contain {
+    max-width: 70%;
+    background: rgba(0, 0, 0, 0.601);
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.ubicacion {
+    padding-top: 60px;
+    background: #1e2326;
+    padding-bottom: 0;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media (max-width: 768px) {
+
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 100vh;
+    }
+
+    .nav {
+        display: none;
+    }
+   
+    
+}

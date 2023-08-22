@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cuenta Tio Jeff</title>
+    <link rel="icon" href="img/icono.png">
+
+</head>
+<body>
+
+    <!--- Menu encabezado --->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobrenosotros" onclick="seleccionar()">Nosotros</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contactenos</a></li>
+                    <li><a href="#ubicacion" onclick="seleccionar()">Ubicación</a></li>
+    
+                 </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+               <i class="fa fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Menu de incicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/tio.jeff.png" alt="">
+            </div>
+            <h1>Tio Jeff</h1>
+            <h2>Instagram @tio_jeff_toys</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/tio_jeff_toys/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="sobrenosotros" class="content about">
+
+        <h2 class="title">Sobre Nosotros</h2>
+        <p>
+            Vendemos figuras, posters y mucho mas
+        </p>
+
+        <a href="#" class="btn">Saber mas</a>
+
+    </section>
+
+    <section id="contacto" class="content price">
+        <article class="contain">
+            <h2 class="title">Contactenos</h2>
+            <p>
+
+            </p>
+
+            <a href="#" class="btn"><i class="fa-brands fa-whatsapp"></i><br>Whatsapp</a>
+            <a href="#" class="btn"><i class="fa-brands fa-instagram"></i><br>Instagram</a>
+        </article>
+
+    </section>
+
+    <section id="ubicacion"class="content ubicacion">
+        <h2 class="title">Ubicacion</h2>
+        <figure class="map">
+            <img src="img/" height="220px" width="100%" alt="mapa">
+        </figure>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
